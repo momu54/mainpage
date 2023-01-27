@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap');
+
+* {
+	font-family: 'JetBrains Mono';
+}
+
+body {
+	background-image: url(./assets/image.png);
+}
+
+.block-center {
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	color: #ffffff;
+	padding: 40px 60px;
+	border: solid #00000000 0px;
+	border-radius: 20px;
+	backdrop-filter: blur(4px);
+	background-color: #ffffff20;
+	font-size: 20px;
+	line-height: 40px;
+}
+
+.Github-btn {
+	height: 40px;
+	width: 40px;
+	background-image: url(./assets/github-mark-white.svg);
+	background-size: 100%;
+	transition: 0.2s;
+	cursor: pointer;
+}
+
+.Github-btn:hover {
+	opacity: 50%;
+}
