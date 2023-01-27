@@ -24,18 +24,26 @@ body {
 	line-height: 40px;
 }
 
-.Github-btn {
+.socialbtn {
 	height: 40px;
 	width: 40px;
-	background-image: url(./assets/github-mark-white.svg);
 	background-size: 100%;
 	transition: 0.2s;
 	cursor: pointer;
 	max-width: 40px;
 }
 
-.Github-btn:hover {
+.socialbtn:hover {
 	opacity: 50%;
+}
+
+.Github-btn {
+	background-image: url(./assets/github-mark-white.svg);
+}
+
+.Instagram-btn {
+	background-image: url(./assets/Instagram_Glyph_White.svg);
+	transform: translateY(1px);
 }
 
 .link {
