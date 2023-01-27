@@ -31,6 +31,8 @@ body {
 	background-size: 100%;
 	transition: 0.2s;
 	cursor: pointer;
+	max-width: 40px;
+	display: inline-block;
 }
 
 .Github-btn:hover {
