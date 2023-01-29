@@ -53,10 +53,6 @@ body {
 	transform: translateY(2px);
 }
 
-.Crowdin-btn {
-	background-image: url(./assets/crowdin-white-symbol.svg);
-}
-
 .link {
 	display: inline-block;
 }
@@ -95,10 +91,6 @@ body {
 .Discord-link .tooltiptext {
 	width: 130px;
 	margin-left: -65px;
-}
-
-.Crowdin-link .tooltiptext {
-	width: 200px;
 }
 
 .tooltip .tooltiptext::after {
