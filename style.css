@@ -2,6 +2,7 @@
 
 * {
 	font-family: 'JetBrains Mono';
+	transition: opacity 0.2s;
 }
 
 body {
@@ -28,9 +29,8 @@ body {
 	height: 40px;
 	width: 40px;
 	background-size: 100%;
-	transition: 0.2s;
 	cursor: pointer;
-	max-width: 40px;
+	max-height: 40px;
 }
 
 .socialbtn:hover {
@@ -38,7 +38,7 @@ body {
 }
 
 .Github-btn {
-	background-image: url(./assets/github-mark-white.svg);
+	background-image: url(./assets/Github-mark-white.svg);
 }
 
 .Instagram-btn {
@@ -46,13 +46,72 @@ body {
 	transform: translateY(1px);
 }
 
+.Discord-btn {
+	background-image: url(./assets/Discord_icon_clyde_white_RGB.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	transform: translateY(2px);
+}
+
+.Crowdin-btn {
+	background-image: url(./assets/crowdin-white-symbol.svg);
+}
+
 .link {
 	display: inline-block;
 }
 
-.Special-btn {
-	font-size: 50px;
+/* Tooltip: https://www.w3schools.com/css/css_tooltip.asp */
+.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+	opacity: 0%;
+	background-color: black;
+	color: #fff;
 	text-align: center;
-	color: #ffffff;
-	display: inline;
+	border-radius: 6px;
+	padding: 0 0;
+	position: absolute;
+	z-index: 1;
+	top: 150%;
+	left: 50%;
+	font-size: 16px;
+}
+
+.Instagram-link .tooltiptext {
+	width: 175px;
+	margin-left: -88px;
+}
+
+.Github-link .tooltiptext {
+	width: 80px;
+	margin-left: -40px;
+}
+
+.Discord-link .tooltiptext {
+	width: 130px;
+	margin-left: -65px;
+}
+
+.Crowdin-link .tooltiptext {
+	width: 200px;
+}
+
+.tooltip .tooltiptext::after {
+	content: '';
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+	opacity: 100%;
 }
