@@ -107,3 +107,7 @@ body {
 .tooltip:hover .tooltiptext {
 	opacity: 100%;
 }
+
+.br {
+	margin-top: 40px; /* change this to whatever height you want it */
+}
