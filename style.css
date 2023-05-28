@@ -33,6 +33,8 @@ body {
 	background-size: 100%;
 	cursor: pointer;
 	max-height: 40px;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .socialbtn:hover {
@@ -50,9 +52,11 @@ body {
 
 .Discord-btn {
 	background-image: url(./assets/Discord_icon_clyde_white_RGB.svg);
-	background-position: center;
-	background-repeat: no-repeat;
 	transform: translateY(2px);
+}
+
+.Twitter-btn {
+	background-image: url(./assets/Twitter_icon_white.svg);
 }
 
 .link {
@@ -81,7 +85,7 @@ body {
 }
 
 .Instagram-link .tooltiptext {
-	width: 175px;
+	width: 170px;
 	margin-left: -88px;
 }
 
@@ -93,6 +97,11 @@ body {
 .Discord-link .tooltiptext {
 	width: 130px;
 	margin-left: -65px;
+}
+
+.Twitter-link .tooltiptext {
+	width: 90px;
+	margin-left: -40px;
 }
 
 .tooltip .tooltiptext::after {
