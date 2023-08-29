@@ -122,3 +122,11 @@ body {
 .br {
 	margin-top: 40px; /* change this to whatever height you want it */
 }
+
+.cursorbg {
+	position: fixed;
+	backdrop-filter: invert(100%);
+	border-radius: 20px;
+	height: 40px;
+	width: 40px;
+}
