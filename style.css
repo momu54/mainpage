@@ -130,4 +130,5 @@ body {
 	height: 40px;
 	width: 40px;
 	pointer-events: none;
+	display: none;
 }
