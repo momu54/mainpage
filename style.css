@@ -8,7 +8,8 @@
 body {
 	background-image: url(./assets/image.png);
 	background-repeat: no-repeat;
-	background-position: cover;
+	background-position: top;
+	background-size: cover;
 }
 
 .block-center {
@@ -22,9 +23,13 @@ body {
 	border: solid #00000000 0px;
 	border-radius: 20px;
 	backdrop-filter: blur(4px);
-	background-color: #ffffff20;
 	font-size: 20px;
 	line-height: 40px;
+	transition: background 0.4s;
+}
+
+.block-center:hover {
+	background-color: #ffffff10;
 }
 
 .socialbtn {
@@ -131,4 +136,5 @@ body {
 	width: 40px;
 	pointer-events: none;
 	display: none;
+	transition: width 0.2s, height 0.2s, top 0.05s, left 0.05s;
 }
