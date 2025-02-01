@@ -7,9 +7,11 @@ if (
 }
 
 let ishoveronbtn = false;
+const cursor_element = /** @type {HTMLCollectionOf<HTMLDivElement>} */ (
+	document.getElementsByClassName('cursorbg')
+);
 
 document.addEventListener('mousemove', (event) => {
-	const cursor_element = document.getElementsByClassName('cursorbg');
 	console.log(cursor_element[0].style.display);
 	if (!cursor_element[0].style.display) cursor_element[0].style.display = 'block';
 	cursor_element[0].style.left = event.clientX - (ishoveronbtn ? 10 : 20) + 'px';
@@ -19,15 +21,24 @@ document.addEventListener('mousemove', (event) => {
 const socialbtn = document.getElementsByClassName('socialbtn');
 [...socialbtn].forEach((element) => {
 	/** @type {HTMLLinkElement} */ (element).addEventListener('mouseenter', () => {
-		const cursor_element = document.getElementsByClassName('cursorbg');
 		cursor_element[0].style.height = '20px';
 		cursor_element[0].style.width = '20px';
 		ishoveronbtn = true;
 	});
 	/** @type {HTMLLinkElement} */ (element).addEventListener('mouseout', () => {
-		const cursor_element = document.getElementsByClassName('cursorbg');
 		cursor_element[0].style.height = '40px';
 		cursor_element[0].style.width = '40px';
 		ishoveronbtn = false;
 	});
+});
+
+socialbtn[3].addEventListener('click', async () => {
+	await navigator.clipboard.writeText('mo._mu.54');
+	const tooltip = /** @type {HTMLSpanElement} */ (
+		document.querySelector('.Discord-link > .tooltiptext')
+	);
+	tooltip.textContent = 'Copied!';
+	setTimeout(() => {
+		tooltip.textContent = 'mo._mu.54';
+	}, 1000);
 });

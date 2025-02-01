@@ -5,3 +5,7 @@
 	border: none;
 	padding: none;
 }
+
+.block-center:hover {
+	background-color: transparent;
+}
